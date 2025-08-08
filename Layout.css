@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*::after,*::before{
+  /*outline: 1px solid #FFF;*/
+  font-family: MicrosoftJhengHeiRegular;
+}
+html {
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background: #efe9e7;
+}
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.header{
+  background: #000;
+  color: #fff;
+  height: auto;
+  position: relative;
+}
+.toptab{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  display: block;
+  background: url(https://raw.githubusercontent.com/drangadrang0830/RWD-1/eee1f12c3f18d82c86f52e8bc367a238a16e20ee/images/logo_w%40svg.svg) no-repeat 50% 50% ;
+  background-size:contain;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 120px;
+  height: 24px;
+  margin-left: 4%;
+}
+.showmenu{
+  display: none;
+  color: #fff;
+  margin-right: 4%;
+  font-size: 24px;
+  padding: 16px 0;
+}
+.menu-show .showmenu{
+  color: #FF0000;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  margin-right: 4%;
+}
+.menu a{
+  display: block;
+  font-size: 16px;
+  padding: 20px 5px;
+  color: #FFF;
+}
+.menu li a:hover{
+  background: #FFF;
+  color: #000;}
+@media(max-width:768px){
+  .logo{
+    width: 94px;
+  } 
+}
+@media(max-width:360px){
+  .showmenu{
+    display: block;
+  }
+  .menu{
+    max-height:0; 
+    overflow: hidden;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    transition:max-height 1s;
+    position: absolute;
+    top:56px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #000;
+    margin-right: 0;
+  }
+  .menu a{
+    padding: 19px 4px 20px;
+    border-top:1px dashed #FFF;
+    color: #FFF;
+  }
+  .menu-show .menu{
+    max-height: 280px;
+  }
+}
+.banner{
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://raw.githubusercontent.com/drangadrang0830/RWD-1/refs/heads/main/images/header_desktop.png) no-repeat;
+    background-size:cover;
+    background-position:70% 50%;
+}
+.slogan{
+  text-align: center;
+  background:rgba(0,0,0,0.35);
+}
+.slogan h1{
+  font-size: 36px;
+  padding: 21px 16px;
+}
+.slogan h1 br{
+  display: none;
+}
+.slogan p{
+  font-size: 16px;
+  line-height: 1.4;
+  padding-bottom: 26px;
+}
+@media(max-width:480px){
+  .banner{
+    background: url(https://raw.githubusercontent.com/drangadrang0830/RWD-1/refs/heads/main/images/header_mobile.png) no-repeat;
+    background-size:cover;
+    background-position:50% 50%;
+  }
+  .slogan h1{
+    font-size: 36px;
+    padding: 21px 6px;
+  }
+  .slogan h1 br{
+    display: block;
+  }
+  .slogan p{
+    padding-bottom: 20px;
+  }
+}
+@media(max-width:360px){
+  .banner{
+    transition:padding-top 1s;
+    padding-top: 0px; 
+  }
+.menu-show .banner{
+    padding-top: 280px;
+  }
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 1.5%;
+}
+.introduce,.contact,.socialmedia{
+  width: 30.5%;
+  color: #3D1101;
+  line-height: 1.4;
+}
+.introduce h2,.contact h2{
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.introduce p{
+  font-size: 16px;
+}
+.contact li{
+  font-size: 16px;
+}
+.contact a{
+  color: #3D1101;
+}
+.socialmedia{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.bottom-logo{
+  display: block;
+  background: url(https://raw.githubusercontent.com/drangadrang0830/RWD-1/eee1f12c3f18d82c86f52e8bc367a238a16e20ee/images/logo_l%40svg.svg) no-repeat 50% 50% ;
+  background-size:contain;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 243px;
+  height: 48px;
+  margin-bottom: 22px;
+}
+.socialmedia ul{
+  display: flex;
+}
+.socialmedia li{
+  margin: 8px 0 8px 12px;
+}
+.socialmedia img{
+  border-radius:5px;
+}
+@media(max-width:768px){
+  .introduce,{
+    width: 30%;
+  }
+  .contact{
+    width: 35%;   
+  }
+  .socialmedia{
+    width: 25%;
+  }
+}
+@media(max-width:600px){
+  .footer{
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 8%;
+    margin: 50px 0;
+  }
+  .introduce,.contact,socialmedia{
+    width: 100%;
+    margin-bottom: 30px;
+}
+}
