@@ -75,6 +75,13 @@ a{
 }
 .socialmedia a img{
   margin-left: 10px;
+  vertical-align: top; 
+}
+.socialmedia .fb{
+  color: #4460a0;
+}
+.socialmedia .twitter{
+  color: #00aaec;
 }
 .topbar{
   display: flex;
@@ -287,6 +294,7 @@ th,td{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 10%;
 }
 .footer li{
 	font-weight: bold;
@@ -299,8 +307,8 @@ th,td{
 }
 .pagemove{
   position: fixed;
-  right: 4%;
-  bottom: 30px;
+  right: 1%;
+  bottom: 5px;
 }
 .pagemove-top{
   display: block;
