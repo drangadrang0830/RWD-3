@@ -206,6 +206,9 @@ th,td{
   padding: 5px;
   border-bottom:1px solid #000;
 }
+.important{
+  color: #22d3a7;
+}
 #contact{
   color:#00a67d;
 }
