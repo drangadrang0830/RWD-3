@@ -268,12 +268,16 @@ th,td{
 	width: 75px;
 	height: 33px;
 	background: #00cc99;
-	font-weight: 400;
+	font-weight: bold;
 	font-size: 16px;
 	color: #fff;
 	line-height: 1.2;
 	border-radius: 5px;
   border: 0px solid #fff;
+}
+.btn button:hover{
+  background: #fff;
+  color: #00cc99;
 }
 .footer{
   padding: 27px 2%;

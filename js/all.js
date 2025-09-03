@@ -16,6 +16,19 @@ $(document).ready(function(){
       scrollTop:1000},
       0);
   });
+   function showBtnCondition() {
+   if ($(this).scrollTop() > 500) {
+     $('.pagemove-top').fadeIn();
+       } else {
+        $('.pagemove-top').fadeOut();
+   };
+    if ($(this).scrollTop() <= 700) {
+     $('.pagemove-bottom').fadeIn();
+       } else {
+        $('.pagemove-bottom').fadeOut();
+   };
+    }
+$(window).scroll(showBtnCondition);
 });
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -38,3 +51,4 @@ lightbox.option({
       'imageFadeDuration':600,
       'albumLabel':	"圖片 %1 of %2",
     });
+
