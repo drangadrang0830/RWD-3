@@ -107,6 +107,9 @@ a{
   display: none;
   z-index:100;
 }
+.anchortag:hover{
+  display: block;
+}
 .anchortag li{
   text-align: center;
 }
@@ -130,9 +133,6 @@ a.fa-solid:hover,.anchortag a:hover,a.active{
 }
 .swiper,.swiper img{
   width: 100%;
-}
-.content{
-
 }
 .banner{
   position: relative;
